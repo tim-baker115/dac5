@@ -1,0 +1,31 @@
+<%= @hostname %>SQL
+        master tcp ether localhost 2010
+        query tcp ether  localhost 2010
+        master tcp ether <%= @hostname %> 2010
+        query tcp ether  <%= @hostname %> 2010
+        master tcp ether netcard3 2010
+        query tcp ether  netcard3 2010
+
+<%= @hostname %>SQL_BS
+        master tcp ether <%= @hostname %> 2011
+        query tcp ether  <%= @hostname %> 2011
+
+<%= @hostname %>SQL_MS
+        master tcp ether <%= @hostname %> 5002
+        query tcp ether  <%= @hostname %> 5002
+
+<%= @hostname %>SQL
+        master tcp ether <%= @hostname %> 2010
+        query tcp ether  <%= @hostname %> 2010
+
+netcard2SQL
+        master tcp ether netcard2 2010
+        query tcp ether  netcard2 2010
+
+netcard3SQL
+        master tcp ether netcard3 2010
+        query tcp ether  netcard3 2010
+
+netcard4SQL
+        master tcp ether netcard4 2010
+        query tcp ether  netcard4 2010
